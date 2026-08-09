@@ -30,17 +30,17 @@ const PROJECTS = [
   { id: 1, title: 'Nebula Rising', category: 'Movies', dept: 'Matchmove / Layout', year: '2025', client: 'Aurora Pictures', software: 'PFTrack, Maya, Nuke', desc: 'A sweeping space opera requiring 240+ shots of complex camera solves through nebulae and asteroid fields. Our team delivered pixel-perfect matchmoves for a fleet of digital spacecraft interacting with practical set photography.', img: PORTFOLIO_IMAGES[0] },
   { id: 2, title: 'Void Protocol', category: 'OTT', dept: 'Camera Track', year: '2025', client: 'Streamverse Originals', software: '3DEqualizer, Maya', desc: 'Handheld and drone camera tracking for an 8-episode sci-fi thriller. Production-ready camera solves under tight deadlines across seven episodes.', img: PORTFOLIO_IMAGES[1] },
   { id: 3, title: 'Chronos Watch', category: 'Commercials', dept: 'Roto Animation', year: '2024', client: 'Chronos Luxury', software: 'Silhouette, Maya, Nuke', desc: 'A 60-second luxury watch commercial demanding creature-tracking of an animated cosmic entity emerging from watch mechanics. Every gear, every reflection tracked to sub-pixel precision.', img: PORTFOLIO_IMAGES[2] },
-  { id: 4, title: 'Wavelengths', category: 'Music Videos', dept: 'Layout / Matchmove', year: '2024', client: 'Polaris Records', software: 'Maya, Nuke, Blender', desc: 'A performance-driven music video with morphing environments and heavy CG replacement. Layout ensured every asset landed in a physically believable space.', img: PORTFOLIO_IMAGES[3] },
-  { id: 5, title: 'Titan Ascending', category: 'CG Projects', dept: 'Full CG Layout', year: '2025', client: 'DarkFrame Studios', software: 'Houdini, Maya, Nuke', desc: 'Fully CG short film exploring a lone astronaut on Titan. Camera layout, scene assembly and previs handled entirely by The Dark Matter team.', img: PORTFOLIO_IMAGES[4] },
-  { id: 6, title: 'Kinetic Bloom', category: 'Animation', dept: 'Character Match Animation', year: '2024', client: 'Kinetic Studios', software: 'Maya, Silhouette', desc: 'A hand-animated character interacting with live plates. Frame-by-frame body tracking and prop animation across 320 shots.', img: PORTFOLIO_IMAGES[5] },
+  // { id: 4, title: 'Wavelengths', category: 'Music Videos', dept: 'Layout / Matchmove', year: '2024', client: 'Polaris Records', software: 'Maya, Nuke, Blender', desc: 'A performance-driven music video with morphing environments and heavy CG replacement. Layout ensured every asset landed in a physically believable space.', img: PORTFOLIO_IMAGES[3] },
+  // { id: 5, title: 'Titan Ascending', category: 'CG Projects', dept: 'Full CG Layout', year: '2025', client: 'DarkFrame Studios', software: 'Houdini, Maya, Nuke', desc: 'Fully CG short film exploring a lone astronaut on Titan. Camera layout, scene assembly and previs handled entirely by The Dark Matter team.', img: PORTFOLIO_IMAGES[4] },
+  // { id: 6, title: 'Kinetic Bloom', category: 'Animation', dept: 'Character Match Animation', year: '2024', client: 'Kinetic Studios', software: 'Maya, Silhouette', desc: 'A hand-animated character interacting with live plates. Frame-by-frame body tracking and prop animation across 320 shots.', img: PORTFOLIO_IMAGES[5] },
   { id: 7, title: 'Signal Lost', category: 'Movies', dept: 'Scene Reconstruction', year: '2024', client: 'Redline Films', software: '3DEqualizer, Maya, RealityCapture', desc: 'Feature-film scene reconstruction combining LIDAR survey data with matchmove for a post-apocalyptic cityscape. Complete set extension pipeline.', img: PORTFOLIO_IMAGES[6] },
   { id: 8, title: 'Aether Drive', category: 'Commercials', dept: 'Vehicle Tracking', year: '2025', client: 'Aether Automotive', software: 'PFTrack, Maya', desc: 'High-speed vehicle tracking and camera solves for a luxury EV launch spot. Multi-camera solves synced with CG environment builds.', img: PORTFOLIO_IMAGES[7] },
 ]
 
 const SERVICES = [
   { icon: Camera, title: 'Matchmove', items: ['Camera Tracking', 'Object Tracking', 'Body Tracking', 'Scene Reconstruction', 'Lens Distortion', 'Survey Integration'] },
-  { icon: Video, title: 'Camera Track', items: ['Complex Camera Solves', 'Drone Tracking', 'Handheld Camera Tracking', 'Vehicle Tracking', 'Multi-camera Solves'] },
-  { icon: Move3d, title: 'Roto Animation', items: ['Character Match Animation', 'Prop Animation', 'Creature Tracking', 'Camera Based Animation', 'Asset Alignment'] },
+  { icon: Video, title: 'VFX Roto', items: ['Character Rotoscopy', 'Hair & Fine Detail Roto', 'Motion-Based Rotoscopy', 'Matte Extraction', 'Holdout & Garbage Mattes', 'Edge Refinement', 'Complex Occlusion Handling', 'Screen & Object Isolation', 'VFX Integration Roto'] },
+  { icon: Move3d, title: 'VFX Paint', items: ['Wire & Rig Removal', 'Clean Plate Creation', 'Background Reconstruction', 'Reflection & Shadow Cleanup', 'Set Extension Cleanup', 'Digital Restoration', 'Flicker & Frame Repair', 'Prep for Compositing'] },
   { icon: Layers, title: 'Layout', items: ['Camera Layout', 'Environment Placement', 'Asset Blocking', 'Scene Assembly', 'Previs Support'] },
 ]
 
@@ -55,12 +55,14 @@ const WHY_US = [
 ]
 
 const TEAM = [
-  { name: 'Ravi Menon', role: 'Founder & VFX Supervisor', exp: '15+ years', bio: 'Former ILM matchmove lead who has supervised camera solves across 40+ theatrical features.', img: 'https://images.unsplash.com/photo-1589002770592-dbb6fa433434' },
-  { name: 'Anika Rao', role: 'CEO', exp: '12+ years', bio: 'Operations leader driving global partnerships and studio pipeline excellence.', img: 'https://images.unsplash.com/photo-1606143412458-acc5f86de897' },
-  { name: 'Kabir Shah', role: 'Senior Matchmove Artist', exp: '10+ years', bio: 'Specialist in complex camera solves, drone photography and lens distortion pipelines.', img: 'https://images.pexels.com/photos/29433729/pexels-photo-29433729.png' },
-  { name: 'Meera Iyer', role: 'Lead Camera Tracking Artist', exp: '8+ years', bio: 'Expert in survey integration and multi-camera setups for episodic television.', img: 'https://images.unsplash.com/photo-1607503873903-c5e95f80d7b9' },
-  { name: 'Dev Malhotra', role: 'Lead Roto Animation Artist', exp: '9+ years', bio: 'Character match animation and creature tracking specialist for streaming originals.', img: 'https://images.unsplash.com/photo-1719400471588-575b23e27bd7' },
-  { name: 'Ishaan Verma', role: 'Layout Supervisor', exp: '11+ years', bio: 'Previs and layout supervision across features, commercials and full-CG projects.', img: 'https://images.unsplash.com/photo-1601506521793-dc748fc80b67' },
+  { name: 'Rohini Sutar', role: 'Founder & Director', exp: '12+ Years', bio: 'Former ILM matchmove lead who has supervised camera solves across 40+ theatrical features.', img: 'https://images.unsplash.com/photo-1589002770592-dbb6fa433434' },
+  { name: 'Kavya Kankanala', role: 'Co-Founder', exp: '11+ Years', bio: 'Operations leader driving global partnerships and studio pipeline excellence.', img: 'https://images.unsplash.com/photo-1606143412458-acc5f86de897' },
+  { name: 'Anup N.', role: 'Co-Founder', exp: '7+ years', bio: 'Operations leader driving global partnerships and studio pipeline excellence.', img: 'https://images.unsplash.com/photo-1589002770592-dbb6fa433434' },
+  { name: 'Vedant M.', role: 'Co-Founder', exp: '6+ years', bio: 'Operations leader driving global partnerships and studio pipeline excellence.', img: 'https://images.unsplash.com/photo-1589002770592-dbb6fa433434' },
+  // { name: '', role: 'Senior Matchmove Artist', exp: '10+ years', bio: 'Specialist in complex camera solves, drone photography and lens distortion pipelines.', img: 'https://images.pexels.com/photos/29433729/pexels-photo-29433729.png' },
+  // { name: '', role: 'Lead Camera Tracking Artist', exp: '8+ years', bio: 'Expert in survey integration and multi-camera setups for episodic television.', img: 'https://images.unsplash.com/photo-1607503873903-c5e95f80d7b9' },
+  // { name: '', role: 'Lead Roto Animation Artist', exp: '9+ years', bio: 'Character match animation and creature tracking specialist for streaming originals.', img: 'https://images.unsplash.com/photo-1719400471588-575b23e27bd7' },
+  // { name: '', role: 'Layout Supervisor', exp: '11+ years', bio: 'Previs and layout supervision across features, commercials and full-CG projects.', img: 'https://images.unsplash.com/photo-1601506521793-dc748fc80b67' },
 ]
 
 const STATS = [
@@ -72,14 +74,19 @@ const STATS = [
 ]
 
 const CAREERS = [
-  { title: 'Matchmove Artist', exp: '2+ years', skills: '3DEqualizer, PFTrack, Maya', location: 'Mumbai / Remote', type: 'Full-time' },
-  { title: 'Camera Tracking Artist', exp: '3+ years', skills: 'PFTrack, Syntheyes, Nuke', location: 'Mumbai / Remote', type: 'Full-time' },
-  { title: 'Roto Animation Artist', exp: '2+ years', skills: 'Silhouette, Maya, Nuke', location: 'Mumbai / Hybrid', type: 'Full-time' },
-  { title: 'Layout Artist', exp: '3+ years', skills: 'Maya, Blender, Unreal', location: 'Mumbai', type: 'Full-time' },
-  { title: 'Internships', exp: '0-1 year', skills: 'Passion + Fundamentals', location: 'Mumbai', type: 'Internship' },
+  { title: 'Matchmove Artist', exp: '2+ years', skills: '3DEqualizer, PFTrack, Syntheyes, Maya', location: 'On-Site (Hyderabad)', type: 'Full-time' },
+  // { title: 'Camera Tracking Artist', exp: '3+ years', skills: 'PFTrack, Syntheyes, Nuke', location: 'Mumbai / Remote', type: 'Full-time' },
+  { title: 'Rotomation Artist', exp: '2+ years', skills: 'Maya', location: 'On-Site (Hyderabad)', type: 'Full-time' },
+  { title: 'Layout Artist', exp: '3+ years', skills: 'Maya, Blender, Unreal', location: 'On-Site (Hyderabad)', type: 'Full-time' },
+  { title: 'VFX Paint Artist', exp: '1-3 years', skills: 'Silhouette, Mocha Pro, Adobe Photoshop, Fusion, Nuke', location: 'On-Site (Hyderabad)', type: 'Full-time' },
+  { title: 'VFX Roto Artist', exp: '1-3 years', skills: 'Silhouette, Mocha Pro, Nuke', location: 'On-Site (Hyderabad)', type: 'Full-time' },
+  { title: 'Internships', exp: '0-1 year', skills: 'Passion + Fundamentals', location: 'On-Site (Hyderabad)', type: 'Internship' },
 ]
 
-const CATEGORIES = ['All', 'Movies', 'OTT', 'Commercials', 'Music Videos', 'CG Projects', 'Animation']
+const CATEGORIES = ['All', 'Movies', 'OTT', 'Commercials']
+// const CATEGORIES = ['All', 'Movies', 'OTT', 'Commercials', 'Music Videos', 'CG Projects', 'Animation']
+
+const currentYear = new Date().getFullYear();
 
 function CustomCursor() {
   const cursor = useRef(null)
@@ -157,7 +164,8 @@ function Navbar() {
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
-  const links = [['Home', '#home'], ['About', '#about'], ['Services', '#services'], ['Portfolio', '#portfolio'], ['Team', '#team'], ['Careers', '#careers'], ['Contact', '#contact']]
+  const links = [['Home', '#home'], ['About', '#about'], ['Services', '#services'], ['Portfolio', '#portfolio'], ['Team', '#team'], ['Careers', '#careers']]
+  // const links = [['Home', '#home'], ['About', '#about'], ['Services', '#services'], ['Portfolio', '#portfolio'], ['Team', '#team'], ['Careers', '#careers'], ['Contact', '#contact']]
   return (
     <motion.nav initial={{ y: -80, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'glass-strong py-3' : 'py-5'}`}>
@@ -209,7 +217,7 @@ function Hero() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass mb-8 text-xs uppercase tracking-widest">
           <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-          <span className="text-white/80">Premium VFX Studio · Est. 2020</span>
+          <span className="text-white/80">Premium VFX Studio · Est. 2024</span>
         </motion.div>
         <motion.h1 initial={{ opacity: 0, filter: 'blur(20px)', y: 40 }} animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
           transition={{ duration: 1.2, delay: 0.4 }} className="font-display font-bold text-[clamp(2.5rem,10vw,8rem)] leading-[0.9] tracking-tight">
@@ -449,15 +457,16 @@ function Team() {
           {TEAM.map((m, i) => (
             <Reveal key={m.name} delay={i * 0.08}>
               <div className="group relative rounded-2xl overflow-hidden glass card-hover">
-                <div className="aspect-[4/5] relative overflow-hidden">
-                  <img src={m.img} alt={m.name} loading="lazy" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                <div className="aspect-[3/2] relative overflow-hidden"> {/* aspect-[4/5] */}
+                  {/* <img src={m.img} alt={m.name} loading="lazy" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" /> */}
+                  {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" /> */}
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="absolute -bottom-2 left-0 right-0 p-6"> {/* bottom-0 */}
                   <div className="text-xs uppercase tracking-widest text-cyan-300 mb-1">{m.exp}</div>
-                  <h3 className="font-display font-bold text-2xl mb-1">{m.name}</h3>
+                  <h3 className="font-display font-bold text-4xl mb-1">{m.name}</h3>
                   <div className="text-white/70 text-sm mb-3">{m.role}</div>
-                  <p className="text-white/60 text-xs leading-relaxed mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">{m.bio}</p>
+                  <p className="text-white/60 text-xs leading-relaxed mb-4 opacity-0 transition-opacity duration-500">{m.bio}</p>
+                  {/* <p className="text-white/60 text-xs leading-relaxed mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">{m.bio}</p> */}
                   <div className="flex gap-2">
                     <a href="#" className="glass w-8 h-8 rounded-full flex items-center justify-center hover:bg-cyan-500/20 transition"><Linkedin size={14} /></a>
                     <a href="#" className="glass w-8 h-8 rounded-full flex items-center justify-center hover:bg-cyan-500/20 transition"><Mail size={14} /></a>
@@ -472,40 +481,40 @@ function Team() {
   )
 }
 
-function Founder() {
-  return (
-    <section className="relative py-32 px-6 overflow-hidden">
-      <div className="absolute inset-0 nebula opacity-60" />
-      <div className="max-w-6xl mx-auto grid md:grid-cols-[auto_1fr] gap-12 items-center relative z-10">
-        <Reveal>
-          <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600 blur-2xl opacity-60 animate-pulse-glow" />
-            <div className="absolute inset-2 rounded-full border-2 border-cyan-400/50 animate-rotate-slow" />
-            <div className="absolute inset-4 rounded-full border border-purple-400/40 animate-rotate-slower" />
-            <div className="absolute inset-6 rounded-full overflow-hidden">
-              <img src={TEAM[0].img} alt="Founder" className="w-full h-full object-cover" />
-            </div>
-          </div>
-        </Reveal>
-        <Reveal delay={0.2}>
-          <SectionLabel>Founder</SectionLabel>
-          <h2 className="font-display font-bold text-4xl md:text-5xl mb-2">Ravi Menon</h2>
-          <div className="text-cyan-300 text-sm uppercase tracking-widest mb-6">Founder &amp; VFX Supervisor</div>
-          <p className="text-white/70 leading-relaxed mb-4">
-            A veteran VFX supervisor with 15+ years across Hollywood, London and Mumbai pipelines. Ravi began as a matchmove artist on visual-effects-heavy features, later leading tracking teams at ILM and Framestore before founding The Dark Matter to bring that same standard to Indian and global productions.
-          </p>
-          <p className="text-white/60 leading-relaxed mb-8">
-            His vision: build a boutique studio where technical precision meets an artist-first culture — where every solve is treated like a signature, not a delivery.
-          </p>
-          <blockquote className="border-l-2 border-cyan-400 pl-6 italic text-white/90 text-lg leading-relaxed">
-            &ldquo;Great visual effects begin long before compositing — they begin with perfect tracking.&rdquo;
-            <div className="mt-3 text-xs not-italic uppercase tracking-widest text-cyan-300">— Ravi Menon</div>
-          </blockquote>
-        </Reveal>
-      </div>
-    </section>
-  )
-}
+// function Founder() {
+//   return (
+//     <section className="relative py-32 px-6 overflow-hidden">
+//       <div className="absolute inset-0 nebula opacity-60" />
+//       <div className="max-w-6xl mx-auto grid md:grid-cols-[auto_1fr] gap-12 items-center relative z-10">
+//         <Reveal>
+//           <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
+//             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600 blur-2xl opacity-60 animate-pulse-glow" />
+//             <div className="absolute inset-2 rounded-full border-2 border-cyan-400/50 animate-rotate-slow" />
+//             <div className="absolute inset-4 rounded-full border border-purple-400/40 animate-rotate-slower" />
+//             <div className="absolute inset-6 rounded-full overflow-hidden">
+//               <img src={TEAM[0].img} alt="Founder" className="w-full h-full object-cover" />
+//             </div>
+//           </div>
+//         </Reveal>
+//         <Reveal delay={0.2}>
+//           <SectionLabel>Founder</SectionLabel>
+//           <h2 className="font-display font-bold text-4xl md:text-5xl mb-2">Ravi Menon</h2>
+//           <div className="text-cyan-300 text-sm uppercase tracking-widest mb-6">Founder &amp; VFX Supervisor</div>
+//           <p className="text-white/70 leading-relaxed mb-4">
+//             A veteran VFX supervisor with 15+ years across Hollywood, London and Mumbai pipelines. Ravi began as a matchmove artist on visual-effects-heavy features, later leading tracking teams at ILM and Framestore before founding The Dark Matter to bring that same standard to Indian and global productions.
+//           </p>
+//           <p className="text-white/60 leading-relaxed mb-8">
+//             His vision: build a boutique studio where technical precision meets an artist-first culture — where every solve is treated like a signature, not a delivery.
+//           </p>
+//           <blockquote className="border-l-2 border-cyan-400 pl-6 italic text-white/90 text-lg leading-relaxed">
+//             &ldquo;Great visual effects begin long before compositing — they begin with perfect tracking.&rdquo;
+//             <div className="mt-3 text-xs not-italic uppercase tracking-widest text-cyan-300">— Ravi Menon</div>
+//           </blockquote>
+//         </Reveal>
+//       </div>
+//     </section>
+//   )
+// }
 
 function Counter({ to, suffix }) {
   const ref = useRef(null)
@@ -640,9 +649,9 @@ function Contact() {
               <div className="glass rounded-2xl p-6">
                 <h3 className="font-display font-bold text-2xl mb-6">The Dark Matter</h3>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3"><MapPin className="text-cyan-400 mt-0.5" size={18} /><div><div className="text-white/50 text-xs uppercase tracking-widest">Address</div><div className="text-white/90 text-sm mt-1">Andheri West, Mumbai, MH 400058, India</div></div></div>
-                  <div className="flex items-start gap-3"><Mail className="text-cyan-400 mt-0.5" size={18} /><div><div className="text-white/50 text-xs uppercase tracking-widest">Email</div><a href="mailto:info@thedarkmatter.com" className="text-white/90 text-sm mt-1 hover:text-cyan-300">info@thedarkmatter.com</a></div></div>
-                  <div className="flex items-start gap-3"><Phone className="text-cyan-400 mt-0.5" size={18} /><div><div className="text-white/50 text-xs uppercase tracking-widest">Phone</div><div className="text-white/90 text-sm mt-1">+91-98XXX-XXXXX</div></div></div>
+                  <div className="flex items-start gap-3"><MapPin className="text-cyan-400 mt-0.5" size={18} /><div><div className="text-white/50 text-xs uppercase tracking-widest">Address</div><div className="text-white/90 text-sm mt-1">Hyderabad, Telangana, India - 500040</div></div></div>
+                  <div className="flex items-start gap-3"><Mail className="text-cyan-400 mt-0.5" size={18} /><div><div className="text-white/50 text-xs uppercase tracking-widest">Email</div><a href="mailto:info@thedarkmatter.com" className="text-white/90 text-sm mt-1 hover:text-cyan-300">thedarkmattervfxstudio@gmail.com</a></div></div>
+                  <div className="flex items-start gap-3"><Phone className="text-cyan-400 mt-0.5" size={18} /><div><div className="text-white/50 text-xs uppercase tracking-widest">Phone</div><div className="text-white/90 text-sm mt-1">+91-74990-22883 / +91-70328-36898</div></div></div>
                   <div className="flex items-start gap-3"><Clock className="text-cyan-400 mt-0.5" size={18} /><div><div className="text-white/50 text-xs uppercase tracking-widest">Business Hours</div><div className="text-white/90 text-sm mt-1">Monday – Friday · 10:00 AM – 7:00 PM IST</div></div></div>
                 </div>
               </div>
@@ -652,8 +661,8 @@ function Contact() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
                     <MapPin className="mx-auto mb-2 text-cyan-400 animate-pulse-glow" size={32} />
-                    <div className="text-white/70 text-sm">Mumbai, India</div>
-                    <div className="text-white/40 text-xs mt-1">19.1197° N · 72.8464° E</div>
+                    <div className="text-white/70 text-sm">Hyderabad, India</div>
+                    <div className="text-white/40 text-xs mt-1">17.4629° N · 78.5610° E</div>
                   </div>
                 </div>
                 <div className="absolute top-4 left-4 glass px-3 py-1 rounded-full text-[10px] uppercase tracking-widest">Studio Location</div>
@@ -731,18 +740,19 @@ function Footer() {
         <div>
           <div className="font-display font-semibold mb-4 text-sm uppercase tracking-widest">Follow</div>
           <div className="flex gap-3 mb-4">
-            {[Linkedin, Instagram, Youtube].map((I, i) => (
+              <a href="#" className="glass w-9 h-9 rounded-full flex items-center justify-center hover:bg-cyan-500/20 transition"><Linkedin size={16} /></a>
+            {/* {[Linkedin, Instagram, Youtube].map((I, i) => (
               <a key={i} href="#" className="glass w-9 h-9 rounded-full flex items-center justify-center hover:bg-cyan-500/20 transition"><I size={16} /></a>
-            ))}
+            ))} */}
           </div>
           <div className="flex gap-2 text-xs">
-            <a href="#" className="glass px-3 py-1.5 rounded-full hover:text-cyan-300 transition">Behance</a>
-            <a href="#" className="glass px-3 py-1.5 rounded-full hover:text-cyan-300 transition">ArtStation</a>
+            {/* <a href="#" className="glass px-3 py-1.5 rounded-full hover:text-cyan-300 transition">Behance</a>
+            <a href="#" className="glass px-3 py-1.5 rounded-full hover:text-cyan-300 transition">ArtStation</a> */}
           </div>
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-white/40">
-        <div>© 2026 The Dark Matter. All Rights Reserved.</div>
+        <div>&copy; {currentYear} The Dark Matter VFX Studio. All Rights Reserved.</div>
         <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" /> All systems tracking nominal</div>
       </div>
     </footer>
@@ -764,7 +774,7 @@ function App() {
         <WhyUs />
         <Portfolio />
         <Team />
-        <Founder />
+        {/* <Founder /> */}
         <Stats />
         <Careers onApply={(p) => { setApplyPos(p); setApplyOpen(true) }} />
         <Contact />
