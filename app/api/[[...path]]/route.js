@@ -6,15 +6,21 @@ const uri = process.env.MONGO_URL
 const dbName = process.env.DB_NAME || 'darkmatter'
 
 let client
-let clientPromise
+let clientPromise = null
 
-if (!global._mongoClientPromise) {
-  client = new MongoClient(uri)
-  global._mongoClientPromise = client.connect()
+// Only create the Mongo client when a URI is provided. This prevents
+// runtime errors during build/analysis when the environment variable
+// isn't set (which caused `.startsWith` on undefined inside the driver).
+if (uri) {
+  if (!global._mongoClientPromise) {
+    client = new MongoClient(uri)
+    global._mongoClientPromise = client.connect()
+  }
+  clientPromise = global._mongoClientPromise
 }
-clientPromise = global._mongoClientPromise
 
 async function getDb() {
+  if (!clientPromise) throw new Error('MONGO_URL not configured')
   const c = await clientPromise
   return c.db(dbName)
 }
