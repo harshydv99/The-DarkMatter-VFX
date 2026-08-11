@@ -66,11 +66,11 @@ const TEAM = [
 ]
 
 const STATS = [
-  { value: 50, suffix: '+', label: 'Projects Completed' },
-  { value: 20, suffix: '+', label: 'Clients' },
-  { value: 10, suffix: '+', label: 'Artists' },
+  { value: 30, suffix: '+', label: 'Projects Completed' },
+  { value: 8, suffix: '+', label: 'Clients' },
+  { value: 40, suffix: '+', label: 'Artists' },
   { value: 100, suffix: '%', label: 'Client Satisfaction' },
-  { value: 5, suffix: '+', label: 'Years Experience' },
+  { value: 2, suffix: '+', label: 'Years Experience' },
 ]
 
 const CAREERS = [
@@ -227,7 +227,7 @@ function Hero() {
           &ldquo;Precision Beyond Reality.&rdquo;
         </motion.p>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1, duration: 0.8 }} className="mt-6 max-w-2xl mx-auto text-white/60 leading-relaxed">
-          We transform impossible shots into seamless cinematic reality through world-class Matchmove, Camera Tracking, Roto Animation, and Layout solutions.
+           We transform impossible shots into seamless cinematic reality through world class Matchmove, Rotomation, VFX Roto, VFX Paint and Layout solutions.
         </motion.p>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.3, duration: 0.8 }} className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#portfolio"><Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:opacity-90 text-white border-0 px-8 py-6 text-base btn-magnetic glow-cyan"><Play className="mr-2 h-4 w-4" /> View Portfolio</Button></a>
@@ -271,10 +271,10 @@ function About() {
             Every great <span className="gradient-text">visual effect</span><br />begins with perfect tracking.
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mb-4">
-            The Dark Matter is a premium Visual Effects company specialising in high-end Matchmove and Layout services for films, OTT platforms, advertisements, television, and digital productions.
+             The Dark Matter is a premium Visual Effects company specialising in high-end Matchmove, Rotomation, VFX Roto, VFX Paint and Layout services for Films, Episodic, Advertisements, Television, and Digital productions.
           </p>
           <p className="text-white/60 leading-relaxed mb-6">
-            Our team combines technical precision with artistic excellence to deliver production-ready camera solves and animation. From complex drone shots to intricate character match animation, we bring impossible visions into believable reality.
+            Our team combines technical precision with artistic excellence to deliver production-ready Matchmove, Rotomation, Roto, and Paint solutions. From complex camera tracking and intricate character animation to precise roto and seamless paint work, we bring every visual detail together to create believable, production-ready results.
           </p>
           <div className="grid grid-cols-3 gap-4 mt-8">
             {[['Precision', Target], ['Speed', Zap], ['Craft', Sparkles]].map(([label, Icon]) => (
@@ -380,7 +380,7 @@ function Portfolio() {
         <Reveal className="text-center mb-10">
           <SectionLabel>Selected Work</SectionLabel>
           <h2 className="font-display font-bold text-5xl md:text-6xl">The <span className="gradient-text">portfolio.</span></h2>
-          <p className="mt-4 text-white/60 max-w-2xl mx-auto">Shots that pushed the limits of camera tracking, matchmove, roto and layout.</p>
+          <p className="mt-4 text-white/60 max-w-2xl mx-auto">Shots that pushed the limits of matchmove, rotomation, roto and paint.</p>
         </Reveal>
         <Reveal className="flex flex-wrap gap-2 justify-center mb-10">
           {CATEGORIES.map(cat => (
