@@ -740,7 +740,8 @@ function Footer() {
         <div>
           <div className="font-display font-semibold mb-4 text-sm uppercase tracking-widest">Follow</div>
           <div className="flex gap-3 mb-4">
-              <a href="#" className="glass w-9 h-9 rounded-full flex items-center justify-center hover:bg-cyan-500/20 transition"><Linkedin size={16} /></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/thedarkmattervfxstudio" className="glass w-9 h-9 rounded-full flex items-center justify-center hover:bg-cyan-500/20 transition"><Linkedin size={16} /></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/thedarkmattervfxstudio" className="glass w-9 h-9 rounded-full flex items-center justify-center hover:bg-cyan-500/20 transition"><Instagram size={16} /></a>
             {/* {[Linkedin, Instagram, Youtube].map((I, i) => (
               <a key={i} href="#" className="glass w-9 h-9 rounded-full flex items-center justify-center hover:bg-cyan-500/20 transition"><I size={16} /></a>
             ))} */}
