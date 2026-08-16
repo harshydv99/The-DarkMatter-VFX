@@ -67,8 +67,8 @@ const TEAM = [
 ]
 
 const STATS = [
-  { value: 30, suffix: '+', label: 'Projects Completed' },
-  { value: 8, suffix: '+', label: 'Clients' },
+  { value: 40, suffix: '+', label: 'Projects Completed' },
+  { value: 12, suffix: '+', label: 'Clients' },
   { value: 40, suffix: '+', label: 'Artists' },
   { value: 100, suffix: '%', label: 'Client Satisfaction' },
   { value: 2, suffix: '+', label: 'Years Experience' },
