@@ -730,7 +730,7 @@ function Footer() {
             {/* <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600" /> */}
             {/* <span className="font-display font-bold">THE DARK <span className="gradient-text">MATTER</span></span> */}
           </div>
-          <p className="text-white/50 text-sm leading-relaxed">Precision Beyond Reality. Premium VFX studio for films, OTT, commercials and CG productions.</p>
+          <p className="text-white/50 text-sm leading-relaxed">Precision Beyond Reality. Premium VFX studio for Films, Episodic, Advertisements, Television, and Digital Productions.</p>
         </div>
         <div>
           <div className="font-display font-semibold mb-4 text-sm uppercase tracking-widest">Quick Links</div>
