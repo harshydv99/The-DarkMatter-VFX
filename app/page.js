@@ -8,11 +8,12 @@ import { Textarea } from '@/components/ui/textarea'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { toast, Toaster } from 'sonner'
+import Roto from '@/public/roto'
 import {
   Camera, Video, Film, Layers, Sparkles, Zap, Target, Clock, Award, CheckCircle2,
   Users, Cpu, Menu, X, ArrowRight, ArrowDown, Mail, Phone, MapPin, Linkedin,
   Instagram, Youtube, ExternalLink, Play, ChevronRight, Briefcase, Star,
-  Rocket, Eye, Move3d, Aperture,
+  Rocket, Eye, Move3d, Aperture, Brush
 } from 'lucide-react'
 
 const PORTFOLIO_IMAGES = [
@@ -39,8 +40,8 @@ const PROJECTS = [
 
 const SERVICES = [
   { icon: Camera, title: 'Matchmove', items: ['Camera Tracking', 'Object Tracking', 'Body Tracking', 'Scene Reconstruction', 'Lens Distortion', 'Survey Integration'] },
-  { icon: Video, title: 'VFX Roto', items: ['Character Rotoscopy', 'Hair & Fine Detail Roto', 'Motion-Based Rotoscopy', 'Matte Extraction', 'Holdout & Garbage Mattes', 'Edge Refinement', 'Complex Occlusion Handling', 'Screen & Object Isolation', 'VFX Integration Roto'] },
-  { icon: Move3d, title: 'VFX Paint', items: ['Wire & Rig Removal', 'Clean Plate Creation', 'Background Reconstruction', 'Reflection & Shadow Cleanup', 'Set Extension Cleanup', 'Digital Restoration', 'Flicker & Frame Repair', 'Prep for Compositing'] },
+  { icon: Roto, title: 'VFX Roto', items: ['Character Rotoscopy', 'Hair & Fine Detail Roto', 'Motion-Based Rotoscopy', 'Matte Extraction', 'Holdout & Garbage Mattes', 'Edge Refinement', 'Complex Occlusion Handling', 'Screen & Object Isolation', 'VFX Integration Roto'] },
+  { icon: Brush, title: 'VFX Paint', items: ['Wire & Rig Removal', 'Clean Plate Creation', 'Background Reconstruction', 'Reflection & Shadow Cleanup', 'Set Extension Cleanup', 'Digital Restoration', 'Flicker & Frame Repair', 'Prep for Compositing'] },
   { icon: Layers, title: 'Layout', items: ['Camera Layout', 'Environment Placement', 'Asset Blocking', 'Scene Assembly', 'Previs Support'] },
 ]
 
@@ -167,17 +168,19 @@ function Navbar() {
   const links = [['Home', '#home'], ['About', '#about'], ['Services', '#services'], ['Portfolio', '#portfolio'], ['Team', '#team'], ['Careers', '#careers']]
   // const links = [['Home', '#home'], ['About', '#about'], ['Services', '#services'], ['Portfolio', '#portfolio'], ['Team', '#team'], ['Careers', '#careers'], ['Contact', '#contact']]
   return (
+    <>
     <motion.nav initial={{ y: -80, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'glass-strong py-3' : 'py-5'}`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2 group">
-          <div className="relative w-8 h-8">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600 animate-pulse-glow" />
+          <div className="relative w-16 h-16">
+            <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+            {/* <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600 animate-pulse-glow" />
             <div className="absolute inset-1 rounded-full bg-black flex items-center justify-center">
               <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_#22d3ee]" />
-            </div>
+            </div> */}
           </div>
-          <span className="font-display font-bold text-lg tracking-tight">THE DARK <span className="gradient-text">MATTER</span></span>
+          {/* <span className="font-display font-bold text-lg tracking-tight">THE DARK <span className="gradient-text">MATTER</span></span> */}
         </a>
         <div className="hidden lg:flex items-center gap-8">
           {links.map(([label, href]) => (
@@ -202,6 +205,7 @@ function Navbar() {
         )}
       </AnimatePresence>
     </motion.nav>
+  </>
   )
 }
 
@@ -211,16 +215,20 @@ function Hero() {
   const opacity = useTransform(scrollY, [0, 500], [1, 0])
   return (
     <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
-      <motion.div style={{ y, opacity }} className="absolute inset-0"><BlackHole /></motion.div>
+      {/* <motion.div style={{ y, opacity }} className="absolute inset-0"><BlackHole /></motion.div> */}
+      <motion.img initial={{ opacity: 0, WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%)", maskImage: "radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%)" }}
+      animate={{ opacity: 1, WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 150%)", maskImage: "radial-gradient(circle, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 150%)" }}
+      transition={{ delay: 0.3, duration: 2.0, ease: "easeInOut" }}
+      src="/bkg.png" alt="Background" className="absolute inset-0 object-cover"/>
       <div className="absolute inset-0 bg-grid bg-grid-fade opacity-30" />
       <motion.div style={{ opacity }} className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass mb-8 text-xs uppercase tracking-widest">
-          <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-          <span className="text-white/80">Premium VFX Studio · Est. 2024</span>
+          className="hidden inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass mb-8 text-xs uppercase tracking-widest">
+          {/* <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+          <span className="text-white/80">Premium VFX Studio · Est. 2024</span> */}
         </motion.div>
         <motion.h1 initial={{ opacity: 0, filter: 'blur(20px)', y: 40 }} animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
-          transition={{ duration: 1.2, delay: 0.4 }} className="font-display font-bold text-[clamp(2.5rem,10vw,8rem)] leading-[0.9] tracking-tight">
+          transition={{ duration: 1.2, delay: 0.4 }} style={{fontFamily: "Ethnocentric", fontSize: "100px"}} className="font-ethnocentric font-1xl font-bold text-[clamp(2.5rem,10vw,8rem)] leading-[0.9] tracking-tight">
           THE DARK<br /><span className="gradient-text">MATTER</span>
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9, duration: 0.8 }} className="mt-6 text-lg md:text-2xl font-light italic text-white/70">
@@ -580,7 +588,7 @@ function Careers({ onApply }) {
                   <div><span className="text-white/40">Skills:</span> {c.skills}</div>
                   <div><span className="text-white/40">Location:</span> {c.location}</div>
                 </div>
-                <Button onClick={() => onApply(c.title)} className="bg-white/5 border border-white/10 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-600 hover:border-transparent transition-all">
+                <Button onClick={() => onApply(c.title)} className="bg-white/50 border border-white/10 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-600 hover:border-transparent transition-all">
                   Apply Now <ArrowRight size={14} className="ml-2" />
                 </Button>
               </div>
@@ -639,7 +647,7 @@ function Contact() {
                 </Select>
               </div>
               <Textarea required placeholder="Tell us about your project..." rows={5} value={form.message} onChange={upd('message')} className="bg-white/5 border-white/10" />
-              <Button type="submit" disabled={loading} size="lg" className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white border-0 h-12 btn-magnetic glow-cyan">
+              <Button type="submit" disabled={loading} size="lg" className="w-full bg-white/50 border border-white/10 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-600 hover:border-transparent transition-all">
                 {loading ? 'Sending...' : 'Send Inquiry'} {!loading && <ArrowRight size={16} className="ml-2" />}
               </Button>
             </form>
@@ -718,8 +726,9 @@ function Footer() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600" />
-            <span className="font-display font-bold">THE DARK <span className="gradient-text">MATTER</span></span>
+            <img src="/logo.png" alt="Logo" className="w-20 h-20 object-contain" />
+            {/* <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600" /> */}
+            {/* <span className="font-display font-bold">THE DARK <span className="gradient-text">MATTER</span></span> */}
           </div>
           <p className="text-white/50 text-sm leading-relaxed">Precision Beyond Reality. Premium VFX studio for films, OTT, commercials and CG productions.</p>
         </div>

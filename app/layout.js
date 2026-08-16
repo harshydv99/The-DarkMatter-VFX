@@ -18,6 +18,7 @@ const inter = Inter({
 
 export const metadata = {
   title: 'The Dark Matter — Precision Beyond Reality | Premium VFX Studio',
+  logo: '/logo.png',
   description: 'Premium Visual Effects studio specialising in high-end Matchmove, Camera Tracking, Roto Animation and Layout for films, OTT, commercials and CG productions.',
   keywords: 'VFX, Visual Effects, Matchmove, Camera Tracking, Roto Animation, Layout, CGI, Film Production',
 }
