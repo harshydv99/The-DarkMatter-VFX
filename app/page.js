@@ -17,25 +17,62 @@ import {
 } from 'lucide-react'
 
 const PORTFOLIO_IMAGES = [
-  'https://images.pexels.com/photos/7672879/pexels-photo-7672879.jpeg',
-  'https://images.pexels.com/photos/7671959/pexels-photo-7671959.jpeg',
-  'https://images.pexels.com/photos/7660823/pexels-photo-7660823.jpeg',
-  'https://images.pexels.com/photos/7662480/pexels-photo-7662480.jpeg',
-  'https://images.pexels.com/photos/7662607/pexels-photo-7662607.jpeg',
-  'https://images.pexels.com/photos/7662469/pexels-photo-7662469.jpeg',
-  'https://images.pexels.com/photos/7661458/pexels-photo-7661458.jpeg',
-  'https://images.pexels.com/photos/7672020/pexels-photo-7672020.jpeg',
+  './poster/Ahsoka.jpg',
+  './poster/Atlas.jpg',
+  './poster/Baaghi 4.jpg',
+  './poster/De De Pyaar De 2.jpg',
+  './poster/Demon Hunters.jpg',
+  './poster/Dhamaal 4.jpg',
+  './poster/Ferrari.jpg',
+  './poster/Housefull 5.jpg',
+  './poster/Kalki.jpg',
+  './poster/Kantara.jpg',
+  './poster/Maa.jpg',
+  './poster/Napoleon.jpg',
+  './poster/Nope.jpg',
+  './poster/Param Sundari.jpg',
+  './poster/pushpa 2 the rule.jpg',
+  './poster/Senna.jpg',
+  './poster/Son of Sardaar 2.jpg',
+  './poster/Sonic the Hedgehog 2.jpg',
+  './poster/OG.jpg',
+  './poster/Top Gun.jpg',
+  './poster/Young Woman and the Sea.jpg'
 ]
 
+// const PORTFOLIO_IMAGES = [
+//   'https://images.pexels.com/photos/7672879/pexels-photo-7672879.jpeg',
+//   'https://images.pexels.com/photos/7671959/pexels-photo-7671959.jpeg',
+//   'https://images.pexels.com/photos/7660823/pexels-photo-7660823.jpeg',
+//   'https://images.pexels.com/photos/7662480/pexels-photo-7662480.jpeg',
+//   'https://images.pexels.com/photos/7662607/pexels-photo-7662607.jpeg',
+//   'https://images.pexels.com/photos/7662469/pexels-photo-7662469.jpeg',
+//   'https://images.pexels.com/photos/7661458/pexels-photo-7661458.jpeg',
+//   'https://images.pexels.com/photos/7672020/pexels-photo-7672020.jpeg',
+// ]
+
 const PROJECTS = [
-  { id: 1, title: 'Nebula Rising', category: 'Movies', dept: 'Matchmove / Layout', year: '2025', client: 'Aurora Pictures', software: 'PFTrack, Maya, Nuke', desc: 'A sweeping space opera requiring 240+ shots of complex camera solves through nebulae and asteroid fields. Our team delivered pixel-perfect matchmoves for a fleet of digital spacecraft interacting with practical set photography.', img: PORTFOLIO_IMAGES[0] },
-  { id: 2, title: 'Void Protocol', category: 'OTT', dept: 'Camera Track', year: '2025', client: 'Streamverse Originals', software: '3DEqualizer, Maya', desc: 'Handheld and drone camera tracking for an 8-episode sci-fi thriller. Production-ready camera solves under tight deadlines across seven episodes.', img: PORTFOLIO_IMAGES[1] },
-  { id: 3, title: 'Chronos Watch', category: 'Commercials', dept: 'Roto Animation', year: '2024', client: 'Chronos Luxury', software: 'Silhouette, Maya, Nuke', desc: 'A 60-second luxury watch commercial demanding creature-tracking of an animated cosmic entity emerging from watch mechanics. Every gear, every reflection tracked to sub-pixel precision.', img: PORTFOLIO_IMAGES[2] },
-  // { id: 4, title: 'Wavelengths', category: 'Music Videos', dept: 'Layout / Matchmove', year: '2024', client: 'Polaris Records', software: 'Maya, Nuke, Blender', desc: 'A performance-driven music video with morphing environments and heavy CG replacement. Layout ensured every asset landed in a physically believable space.', img: PORTFOLIO_IMAGES[3] },
-  // { id: 5, title: 'Titan Ascending', category: 'CG Projects', dept: 'Full CG Layout', year: '2025', client: 'DarkFrame Studios', software: 'Houdini, Maya, Nuke', desc: 'Fully CG short film exploring a lone astronaut on Titan. Camera layout, scene assembly and previs handled entirely by The Dark Matter team.', img: PORTFOLIO_IMAGES[4] },
-  // { id: 6, title: 'Kinetic Bloom', category: 'Animation', dept: 'Character Match Animation', year: '2024', client: 'Kinetic Studios', software: 'Maya, Silhouette', desc: 'A hand-animated character interacting with live plates. Frame-by-frame body tracking and prop animation across 320 shots.', img: PORTFOLIO_IMAGES[5] },
-  { id: 7, title: 'Signal Lost', category: 'Movies', dept: 'Scene Reconstruction', year: '2024', client: 'Redline Films', software: '3DEqualizer, Maya, RealityCapture', desc: 'Feature-film scene reconstruction combining LIDAR survey data with matchmove for a post-apocalyptic cityscape. Complete set extension pipeline.', img: PORTFOLIO_IMAGES[6] },
-  { id: 8, title: 'Aether Drive', category: 'Commercials', dept: 'Vehicle Tracking', year: '2025', client: 'Aether Automotive', software: 'PFTrack, Maya', desc: 'High-speed vehicle tracking and camera solves for a luxury EV launch spot. Multi-camera solves synced with CG environment builds.', img: PORTFOLIO_IMAGES[7] },
+  { id: 1, title: 'Atlas', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2024', client: 'Streamverse Originals', software: '3DEqualizer, Maya', desc: 'Handheld and drone camera tracking for an 8-episode sci-fi thriller. Production-ready camera solves under tight deadlines across seven episodes.', img: PORTFOLIO_IMAGES[1] },
+  { id: 2, title: 'Baaghi 4', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'Chronos Luxury', software: 'Silhouette, Maya, Nuke', desc: 'A 60-second luxury watch commercial demanding creature-tracking of an animated cosmic entity emerging from watch mechanics. Every gear, every reflection tracked to sub-pixel precision.', img: PORTFOLIO_IMAGES[2] },
+  { id: 3, title: 'De De Pyaar De 2', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'Polaris Records', software: 'Maya, Nuke, Blender', desc: 'A performance-driven music video with morphing environments and heavy CG replacement. Layout ensured every asset landed in a physically believable space.', img: PORTFOLIO_IMAGES[3] },
+  { id: 4, title: 'Demon Hunters', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'DarkFrame Studios', software: 'Houdini, Maya, Nuke', desc: 'Fully CG short film exploring a lone astronaut on Titan. Camera layout, scene assembly and previs handled entirely by The Dark Matter team.', img: PORTFOLIO_IMAGES[4] },
+  { id: 5, title: 'Dhamaal 4', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'Kinetic Studios', software: 'Maya, Silhouette', desc: 'A hand-animated character interacting with live plates. Frame-by-frame body tracking and prop animation across 320 shots.', img: PORTFOLIO_IMAGES[5] },
+  { id: 6, title: 'Ferrari', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2023', client: 'Redline Films', software: '3DEqualizer, Maya, RealityCapture', desc: 'Feature-film scene reconstruction combining LIDAR survey data with matchmove for a post-apocalyptic cityscape. Complete set extension pipeline.', img: PORTFOLIO_IMAGES[6] },
+  { id: 7, title: 'Housefull 5', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'Aether Automotive', software: 'PFTrack, Maya', desc: 'High-speed vehicle tracking and camera solves for a luxury EV launch spot. Multi-camera solves synced with CG environment builds.', img: PORTFOLIO_IMAGES[7] },
+  { id: 8, title: 'Kalki', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2024', client: 'Streamverse Originals', software: '3DEqualizer, Maya', desc: 'Handheld and drone camera tracking for an 8-episode sci-fi thriller. Production-ready camera solves under tight deadlines across seven episodes.', img: PORTFOLIO_IMAGES[8] },
+  { id: 9, title: 'Kantara Chapter 1', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'Chronos Luxury', software: 'Silhouette, Maya, Nuke', desc: 'A 60-second luxury watch commercial demanding creature-tracking of an animated cosmic entity emerging from watch mechanics. Every gear, every reflection tracked to sub-pixel precision.', img: PORTFOLIO_IMAGES[9] },
+  { id: 10, title: 'Maa', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'Polaris Records', software: 'Maya, Nuke, Blender', desc: 'A performance-driven music video with morphing environments and heavy CG replacement. Layout ensured every asset landed in a physically believable space.', img: PORTFOLIO_IMAGES[10] },
+  { id: 11, title: 'Napoleon', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2023', client: 'DarkFrame Studios', software: 'Houdini, Maya, Nuke', desc: 'Fully CG short film exploring a lone astronaut on Titan. Camera layout, scene assembly and previs handled entirely by The Dark Matter team.', img: PORTFOLIO_IMAGES[11] },
+  { id: 12, title: 'Nope', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2022', client: 'Kinetic Studios', software: 'Maya, Silhouette', desc: 'A hand-animated character interacting with live plates. Frame-by-frame body tracking and prop animation across 320 shots.', img: PORTFOLIO_IMAGES[12] },
+  { id: 13, title: 'Param Sundari', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'Redline Films', software: '3DEqualizer, Maya, RealityCapture', desc: 'Feature-film scene reconstruction combining LIDAR survey data with matchmove for a post-apocalyptic cityscape. Complete set extension pipeline.', img: PORTFOLIO_IMAGES[13] },
+  { id: 14, title: 'Pushpa 2: The Rule', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2024', client: 'Aether Automotive', software: 'PFTrack, Maya', desc: 'High-speed vehicle tracking and camera solves for a luxury EV launch spot. Multi-camera solves synced with CG environment builds.', img: PORTFOLIO_IMAGES[14] },
+  { id: 15, title: 'Senna', category: 'OTT', dept: 'Matchmove / Rotomation', year: '2024', client: 'Polaris Records', software: 'Maya, Nuke, Blender', desc: 'A performance-driven music video with morphing environments and heavy CG replacement. Layout ensured every asset landed in a physically believable space.', img: PORTFOLIO_IMAGES[15] },
+  { id: 16, title: 'Son of Sardaar 2', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'DarkFrame Studios', software: 'Houdini, Maya, Nuke', desc: 'Fully CG short film exploring a lone astronaut on Titan. Camera layout, scene assembly and previs handled entirely by The Dark Matter team.', img: PORTFOLIO_IMAGES[16] },
+  { id: 17, title: 'Sonic The Hedgehog 2', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2022', client: 'Kinetic Studios', software: 'Maya, Silhouette', desc: 'A hand-animated character interacting with live plates. Frame-by-frame body tracking and prop animation across 320 shots.', img: PORTFOLIO_IMAGES[17] },
+  { id: 18, title: 'Star Wars: Ahsoka Season Two', category: 'OTT', dept: 'Matchmove / Rotomation', year: '2023', client: 'Aurora Pictures', software: 'PFTrack, Maya, Nuke', desc: 'A sweeping space opera requiring 240+ shots of complex camera solves through nebulae and asteroid fields. Our team delivered pixel-perfect matchmoves for a fleet of digital spacecraft interacting with practical set photography.', img: PORTFOLIO_IMAGES[0] },
+  { id: 19, title: 'They Call Him OG', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2025', client: 'Redline Films', software: '3DEqualizer, Maya, RealityCapture', desc: 'Feature-film scene reconstruction combining LIDAR survey data with matchmove for a post-apocalyptic cityscape. Complete set extension pipeline.', img: PORTFOLIO_IMAGES[18] },
+  { id: 20, title: 'Top Gun: Maverick', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2022', client: 'Aether Automotive', software: 'PFTrack, Maya', desc: 'High-speed vehicle tracking and camera solves for a luxury EV launch spot. Multi-camera solves synced with CG environment builds.', img: PORTFOLIO_IMAGES[19] },
+  { id: 21, title: 'Young Woman and The Sea', category: 'Movies', dept: 'Matchmove / Rotomation', year: '2024', client: 'Aether Automotive', software: 'PFTrack, Maya', desc: 'High-speed vehicle tracking and camera solves for a luxury EV launch spot. Multi-camera solves synced with CG environment builds.', img: PORTFOLIO_IMAGES[20] },
 ]
 
 const SERVICES = [
@@ -84,7 +121,8 @@ const CAREERS = [
   { title: 'Internships', exp: '0-1 year', skills: 'Passion + Fundamentals', location: 'On-Site (Hyderabad)', type: 'Internship' },
 ]
 
-const CATEGORIES = ['All', 'Movies', 'OTT', 'Commercials']
+const CATEGORIES = ['All', 'Movies', 'OTT']
+// const CATEGORIES = ['All', 'Movies', 'OTT', 'Commercials']
 // const CATEGORIES = ['All', 'Movies', 'OTT', 'Commercials', 'Music Videos', 'CG Projects', 'Animation']
 
 const currentYear = new Date().getFullYear();
@@ -398,20 +436,23 @@ function Portfolio() {
             </button>
           ))}
         </Reveal>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 auto-rows-[280px] gap-4">
+        <div className="grid grid-cols-3 auto-rows-[280px] gap-4">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 auto-rows-[280px] gap-4"> */}
           <AnimatePresence mode="popLayout">
             {filtered.map((p, i) => (
               <motion.div key={p.id} layout initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.5, delay: i * 0.05 }} onClick={() => setActive(p)}
-                className={`group relative rounded-2xl overflow-hidden cursor-pointer glass ${i % 5 === 0 ? 'md:row-span-2' : ''} ${i % 7 === 3 ? 'md:col-span-2' : ''}`}>
+                // transition={{ duration: 0.5, delay: i * 0.05 }} onClick={() => setActive(p)}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className={`group relative rounded-2xl overflow-hidden cursor-pointer glass row-span-2`}>
+                {/* className={`group relative rounded-2xl overflow-hidden cursor-pointer glass ${i % 5 === 0 ? 'md:row-span-2' : ''} ${i % 7 === 3 ? 'md:col-span-2' : ''}`}> */}
                 <img src={p.img} alt={p.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />
                 <div className="absolute inset-0 flex flex-col justify-end p-6">
                   <div className="text-xs uppercase tracking-widest text-cyan-300/90 mb-2">{p.dept} · {p.year}</div>
                   <h3 className="font-display font-bold text-2xl md:text-3xl mb-2 group-hover:text-glow-cyan transition-all">{p.title}</h3>
-                  <div className="opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                  {/* <div className="opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
                     <span className="inline-flex items-center gap-1 text-sm text-cyan-300">View Project <ArrowRight size={14} /></span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="absolute top-4 right-4 glass px-2.5 py-1 rounded-full text-[10px] uppercase tracking-widest">{p.category}</div>
               </motion.div>
