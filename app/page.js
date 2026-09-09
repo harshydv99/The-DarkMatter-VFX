@@ -255,9 +255,9 @@ function Hero() {
     <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* <motion.div style={{ y, opacity }} className="absolute inset-0"><BlackHole /></motion.div> */}
       <motion.img initial={{ opacity: 0, WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%)", maskImage: "radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%)" }}
-      animate={{ opacity: 1, WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 150%)", maskImage: "radial-gradient(circle, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 150%)" }}
+      animate={{ opacity: 1, WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%)", maskImage: "radial-gradient(circle, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%)" }}
       transition={{ delay: 0.3, duration: 2.0, ease: "easeInOut" }}
-      src="/bkg.png" alt="Background" className="absolute inset-0 object-cover"/>
+      src="/bkg.png" alt="Background" className="absolute inset-0 w-full h-full object-cover object-center"/>
       <div className="absolute inset-0 bg-grid bg-grid-fade opacity-30" />
       <motion.div style={{ opacity }} className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8 }}
@@ -266,7 +266,7 @@ function Hero() {
           <span className="text-white/80">Premium VFX Studio · Est. 2024</span> */}
         </motion.div>
         <motion.h1 initial={{ opacity: 0, filter: 'blur(20px)', y: 40 }} animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
-          transition={{ duration: 1.2, delay: 0.4 }} style={{fontFamily: "Ethnocentric", fontSize: "100px"}} className="font-ethnocentric font-1xl font-bold text-[clamp(2.5rem,10vw,8rem)] leading-[0.9] tracking-tight">
+          transition={{ duration: 1.2, delay: 0.4 }} style={{fontFamily: "Ethnocentric"}} className="font-ethnocentric font-1xl font-bold text-[clamp(2.5rem,10vw,8rem)] leading-[0.9] tracking-tight text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[100px]">
           THE DARK<br /><span className="gradient-text">MATTER</span>
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9, duration: 0.8 }} className="mt-6 text-lg md:text-2xl font-light italic text-white/70">
@@ -436,7 +436,7 @@ function Portfolio() {
             </button>
           ))}
         </Reveal>
-        <div className="grid grid-cols-3 auto-rows-[280px] gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 auto-rows-[280px] gap-4">
         {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 auto-rows-[280px] gap-4"> */}
           <AnimatePresence mode="popLayout">
             {filtered.map((p, i) => (
